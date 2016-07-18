@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profilePicImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/charlie" />
+
+        <TextView
+            android:id="@+id/notificationsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilePicImageView"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="Charlie Drews and Alan Caceres posted in ADI Gelato, 'I started Pokemon Go'"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/timeStampTextView"
+            android:layout_below="@id/notificationsTextView"
+            android:src="@drawable/pokeball" />
+
+        <TextView
+            android:id="@+id/timeStampTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationsTextView"
+            android:layout_toRightOf="@+id/profilePicImageView"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:text="42 minutes ago" />
+
+    </RelativeLayout>
+</LinearLayout>
